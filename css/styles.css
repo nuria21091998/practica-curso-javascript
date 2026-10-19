@@ -1,0 +1,44 @@
+
+/* Estilos generales de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+/* Cabecera */
+header {
+    background-color: #263849;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #e5eaf0;
+    padding: 15px;
+}
+
+nav a {
+    color: #263849;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #263849;
+    color: white;
+}
