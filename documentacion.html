@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación - Curso de JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 25px;
+            line-height: 1.6;
+            color: #263849;
+            background-color: #f4f6f8;
+        }
+        header, section {
+            background: white;
+            padding: 22px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        header {
+            background-color: #263849;
+            color: white;
+        }
+        h2 { color: #176b87; }
+        code {
+            background: #e8edf2;
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Documentación de la práctica</h1>
+        <p>Curso de JavaScript — Git y GitFlow</p>
+    </header>
+
+    <section>
+        <h2>1. Introducción a Git</h2>
+        <p>Git es un sistema de control de versiones que permite registrar los cambios de un proyecto, consultar su historial y trabajar con ramas para desarrollar funcionalidades de forma organizada.</p>
+        <p>Un repositorio almacena los archivos del proyecto y el historial de cambios. Un commit registra un conjunto de cambios con un mensaje descriptivo.</p>
+    </section>
+
+    <section>
+        <h2>2. ¿Qué es GitFlow?</h2>
+        <p>GitFlow es una estrategia de trabajo basada en ramas. Ayuda a separar el desarrollo de nuevas funcionalidades (develop), la preparación de versiones (releases) y las correcciones urgentes (hotfix).</p>
+        <ul>
+            <li><code>main</code>: contiene las versiones estables.</li>
+            <li><code>develop</code>: reúne las funcionalidades en desarrollo.</li>
+            <li><code>feature/</code>: permite trabajar en funcionalidades concretas.</li>
+            <li><code>release/</code>: prepara una versión para su publicación.</li>
+            <li><code>hotfix/</code>: permite corregir rápidamente una versión estable.</li>
+            <li><code>gh-pages</code>: contiene la página de documentación publicada.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>3. Funcionalidades desarrolladas</h2>
+        <h3>Modificar contenido HTML</h3>
+        <p>La función <code>cambiarContenido()</code> utiliza <code>document.getElementById()</code> e <code>innerHTML</code> para cambiar el contenido de un párrafo.</p>
+
+        <h3>Modificar atributos HTML</h3>
+        <p>La función <code>cambiarImagen()</code> modifica el atributo <code>src</code> de una imagen para mostrar otra imagen.</p>
+
+        <h3>Modificar estilos CSS</h3>
+        <p>La función <code>cambiarEstilos()</code> modifica las propiedades <code>style.color</code> y <code>style.fontSize</code> de un elemento.</p>
+    </section>
+
+    <section>
+        <h2>4. Proceso seguido con GitFlow</h2>
+        <ol>
+            <li>Se creó el repositorio y la estructura inicial de la web.</li>
+            <li>Se inició GitFlow con <code>main</code> como rama de producción y <code>develop</code> como rama de desarrollo.</li>
+            <li>El Usuario 2 desarrolló las ramas <code>feature/contenidoHTML</code> y <code>feature/atributosHTML</code>.</li>
+            <li>El Usuario 3 desarrolló <code>feature/estilosCSS</code>.</li>
+            <li>Las funcionalidades se integraron en <code>develop</code>.</li>
+            <li>Se preparó la versión <code>v1.0</code> mediante una rama release.</li>
+            <li>El Usuario 1 realizó una mejora mediante la rama <code>hotfix/mejorasV_1_0</code>.</li>
+            <li>Se integró la corrección en <code>main</code> y <code>develop</code> y se subieron las ramas y etiquetas a GitHub.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>5. Evidencias de la práctica</h2>
+        <h3>Creación del README para el repositorio</h3>
+        <img src="capturas/2 creacion readme.jpg"
+            alt="Creación del README para el repositorio"
+            width="700">
+        <h3>Inicialización de GitFlow</h3>
+        <img src="capturas/3 inicio gitflow.jpg"
+        alt="Inicialización de GitFlow"
+        width="700">
+     <h3>1. Subida de la estructura inicial a GitHub</h3>
+<p>Se muestra la estructura inicial del proyecto subida al repositorio remoto.</p>
+<img src="capturas/5 subida estructura inicial a github.jpg"
+     alt="Subida de la estructura inicial del proyecto a GitHub"
+     width="700">
+
+<h3>2. Desarrollo de una funcionalidad con GitFlow</h3>
+<p>Se muestra el trabajo del Usuario 2 en una rama feature, incluyendo el desarrollo y la integración de la funcionalidad.</p>
+<img src="capturas/6 usuario 2 modifica index html (feature finish, start y modificacion se han perdido).jpg"
+     alt="Desarrollo e integración de una funcionalidad HTML con GitFlow"
+     width="700">
+
+<h3>3. Funcionalidad completada</h3>
+<p>Evidencia de la funcionalidad implementada en el proyecto.</p>
+<img src="capturas/7 feature completa.jpg"
+     alt="Funcionalidad HTML completada"
+     width="700">
+
+<h3>4. Desarrollo de los estilos CSS</h3>
+<p>Se muestra la creación y el desarrollo de la funcionalidad para modificar estilos CSS mediante JavaScript.</p>
+<img src="capturas/8 feature estilos css.jpg"
+     alt="Funcionalidad para modificar estilos CSS"
+     width="700">
+
+<h3>5. Creación de la versión 1.0 mediante release</h3>
+<p>Se muestra la preparación de la versión del proyecto y la creación de su etiqueta.</p>
+<img src="capturas/10 release etiqueta.jpg"
+     alt="Creación de la versión 1.0 mediante GitFlow"
+     width="700">
+
+<h3>6. Corrección de una versión estable mediante hotfix</h3>
+<p>Se muestra la creación de la rama hotfix y la mejora aplicada al proyecto.</p>
+<img src="capturas/12 hotfix start y cambio.jpg"
+     alt="Corrección del proyecto mediante una rama hotfix"
+     width="700">
+
+
+
+    <section>
+        <h2>6. Conclusión</h2>
+        <p>La práctica permite comprender cómo Git registra los cambios y cómo GitFlow organiza el desarrollo mediante ramas. También muestra cómo publicar una página web y documentar el proceso seguido.</p>
+    </section>
+</body>
+</html>
