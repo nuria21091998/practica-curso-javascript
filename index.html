@@ -36,6 +36,24 @@
             </button>
         </section>
 
+                <section id="atributosHTML">
+            <h2>Modificar atributos HTML</h2>
+            <p>Podemos utilizar JavaScript para cambiar los atributos de un elemento HTML.</p>
+
+            <img
+                id="imagenEjemplo"
+                src="https://www.w3schools.com/html/img_girl.jpg"
+                alt="Ejemplo de una imagen HTML"
+                width="200"
+            >
+
+            <br><br>
+
+            <button onclick="cambiarImagen()">
+                Cambiar imagen
+            </button>
+        </section>
+
     </main>
 
     <footer>
@@ -47,6 +65,11 @@
         function cambiarContenido() {
             document.getElementById("mensajeHTML").innerHTML =
                 "¡El contenido HTML ha cambiado con JavaScript!";
+        }
+                // Cambia el atributo src de la imagen.
+        function cambiarImagen() {
+            document.getElementById("imagenEjemplo").src =
+                "https://www.w3schools.com/html/smiley.gif";
         }
     </script>
 
