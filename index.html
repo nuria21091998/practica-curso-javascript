@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de JavaScript</h1>
+        <p>Aprende a crear páginas web interactivas</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Bienvenido al curso</h2>
+            <p>
+                En este curso aprenderás a utilizar JavaScript para modificar
+                el contenido HTML, cambiar atributos y modificar los estilos CSS
+                de una página web.
+            </p>
+        </section>
+        
+        <section id="contenidoHTML">
+            <h2>Modificar contenido HTML</h2>
+            <p id="mensajeHTML">Este es el contenido original.</p>
+
+            <button onclick="cambiarContenido()">
+                Cambiar contenido
+            </button>
+        </section>
+
+                <section id="atributosHTML">
+            <h2>Modificar atributos HTML</h2>
+            <p>Podemos utilizar JavaScript para cambiar los atributos de un elemento HTML.</p>
+
+            <img
+                id="imagenEjemplo"
+                src="https://www.w3schools.com/html/img_girl.jpg"
+                alt="Ejemplo de una imagen HTML"
+                width="200"
+            >
+
+            <br><br>
+
+            <button onclick="cambiarImagen()">
+                Cambiar imagen
+            </button>
+        </section>
+
+                <section id="estilosCSS">
+            <h2>Modificar estilos CSS</h2>
+            <p id="textoEstilos">
+                JavaScript también permite cambiar los estilos de una página.
+            </p>
+
+            <button onclick="cambiarEstilos()">
+                Cambiar estilos
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Curso de JavaScript - Práctica de sistemas de control de versiones</p>
+    </footer>
+    
+    <script>
+        // Cambia el contenido del párrafo al pulsar el botón.
+        function cambiarContenido() {
+            document.getElementById("mensajeHTML").innerHTML =
+                "¡El contenido HTML ha cambiado con JavaScript!";
+        }
+                // Cambia el atributo src de la imagen.
+        function cambiarImagen() {
+            document.getElementById("imagenEjemplo").src =
+                "https://www.w3schools.com/html/smiley.gif";
+        }
+                // Cambia el color y el tamaño del texto.
+        function cambiarEstilos() {
+            const texto = document.getElementById("textoEstilos");
+            texto.style.color = "blue";
+            texto.style.fontSize = "24px";
+        }
+        
+    </script>
+
+</body>
+</html>
