@@ -26,10 +26,29 @@
                 de una página web.
             </p>
         </section>
+        
+        <section id="contenidoHTML">
+            <h2>Modificar contenido HTML</h2>
+            <p id="mensajeHTML">Este es el contenido original.</p>
+
+            <button onclick="cambiarContenido()">
+                Cambiar contenido
+            </button>
+        </section>
+
     </main>
 
     <footer>
         <p>Curso de JavaScript - Práctica de sistemas de control de versiones</p>
     </footer>
+    
+    <script>
+        // Cambia el contenido del párrafo al pulsar el botón.
+        function cambiarContenido() {
+            document.getElementById("mensajeHTML").innerHTML =
+                "¡El contenido HTML ha cambiado con JavaScript!";
+        }
+    </script>
+
 </body>
 </html>
